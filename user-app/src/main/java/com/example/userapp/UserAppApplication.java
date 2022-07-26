@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@RibbonClient(name="chatbook", configuration = RibbonConfiguration.class)
+@RibbonClient(name="ribbon", configuration = RibbonConfiguration.class)
 public class UserAppApplication {
 
     public static void main(String[] args) {

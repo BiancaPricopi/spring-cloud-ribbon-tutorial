@@ -13,7 +13,7 @@ public class UserAppController {
 
     @GetMapping("/invoke")
     public String invokeChatBook() {
-        String url = "http://chatbook/chatbook-application/chat";
+        String url = "http://sentence/port";
         return restTemplate.getForObject(url, String.class);
     }
 }

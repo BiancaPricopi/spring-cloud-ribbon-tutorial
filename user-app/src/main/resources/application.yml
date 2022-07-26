@@ -1,14 +1,11 @@
 spring:
   application:
     name: user-app
-
-chatbook:
+sentence:
   ribbon:
     eureka:
       enabled: false
-    listOfServers: localhost:8084,localhost:8085
+    listOfServers: localhost:8081, localhost:8084, localhost:8085
     ServerListRefreshInterval: 2000
-
 server:
   port: 9090
-

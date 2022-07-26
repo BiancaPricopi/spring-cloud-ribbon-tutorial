@@ -14,12 +14,12 @@ public class RibbonConfiguration {
     IClientConfig ribbonClient;
 
     @Bean
-    public IPing ping(IClientConfig ribbonClient) {
+    public IPing ping(IClientConfig config) {
         return new PingUrl();
     }
 
     @Bean
-    public IRule rule(IClientConfig ribbonClient) {
+    public IRule rule(IClientConfig config) {
         return new AvailabilityFilteringRule();
     }
 }
